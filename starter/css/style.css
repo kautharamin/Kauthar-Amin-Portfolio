@@ -1,19 +1,115 @@
 
 body {
-    font-family: Arial, sans-serif;
-  }
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-  }
-  header a {
-    color: white;
-    text-decoration: none;
-  }
-  section {
-    display: flex;
-  }
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+}
  
-  main
   
+
+/*About Me Grid */
+
+
+#about-grid {
+  display: grid;
+  grid-template-rows: 90% 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "about-me-heading about-me-p about-me-p"
+    "about-me-heading about-me-p about-me-p"    
+  ;
+}
+
+#about-me-heading {
+  grid-area: about-me-heading;
+}
+
+#about-me-p {
+  grid-area: about-me-p;
+}
+
+.about-grid-area, .project-grid-area, contact-grid-area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+/* Project Grid */
+
+#project-grid {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "project-heading project-1 project-1"
+    "project-heading project-1 project-1"
+    "project-heading project-2 project-3"
+    "project-heading project-4 project-5"
+  ;
+}
+
+#project-heading {
+  grid-area: project-heading;
+}
+
+#project-1 {
+  grid-area: project-1;
+}
+
+#project-2 {
+  grid-area: project-2;
+}
+
+#project-3 {
+  grid-area: project-3;
+}
+
+#project-4 {
+  grid-area: project-4;
+}
+
+#project-5 {
+  grid-area: project-5;
+}
+
+
+
+/*Contact Grid */
+
+
+#contact-grid {
+  display: grid;
+  grid-template-rows: 90% 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "contact-heading contact-content contact-content"
+    "contact-heading contact-content contact-content"    
+  ;
+}
+
+#contact-heading {
+  grid-area: contact-heading;
+}
+
+#contact-content {
+  grid-area: contact-content;
+}
+
+
